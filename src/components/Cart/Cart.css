@@ -1,0 +1,138 @@
+/* Main Page Container */
+.cart-page-container {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  background: #f3f4f6;
+  min-height: 100vh;
+}
+
+/* Cart Box */
+.cart-container {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cart-container h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Cart Item */
+.cart-item {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #e5e7eb;
+  align-items: center;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #e5e5e5;
+}
+
+.cart-item-details h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.cart-item-details p {
+  margin: 6px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4b5563;
+}
+
+/* Input + Buttons */
+.cart-item-details input {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  margin-right: 10px;
+}
+
+.cart-item-details button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: 0.2s;
+}
+
+/* Remove Button */
+.cart-item-details button:nth-child(2) {
+  background: #ef4444;
+  color: #fff;
+}
+
+.cart-item-details button:nth-child(2):hover {
+  background: #dc2626;
+}
+
+/* Update Button */
+.cart-item-details button:nth-child(3) {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.cart-item-details button:nth-child(3):hover {
+  background: #2563eb;
+}
+
+/* Cart Total Section */
+.cart-total {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.cart-total p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.back-button {
+  background: #10b981;
+  color: white;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+.back-button:hover {
+  background: #059669;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cart-total {
+    text-align: center;
+  }
+}
