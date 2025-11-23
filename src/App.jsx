@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Cart from './components/Cart/Cart'
+import './App.css'
+import Product from './components/Product/Product'
 
 function App() {
 
 
   return (
     <>
-      <h1>Shopping Cart App</h1>
-      <Navbar />  
+      <Router>
+        <Routes>
+          <Route path='/' element={<Product />} />
+          <Route path='/cart' element={<Cart />} />
+        </Routes>
+      </Router>
       
     </>
   )
