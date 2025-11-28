@@ -29,7 +29,7 @@ const {products, status}=useSelector((state) => state.products);
       <img src={product.image} alt={product.title} />
       <h2>{product.title.length > 20 ? `${product.title.slice(0,15)}...`: product.title}</h2>
       <p>${product.price}</p>
-      <button onClick={()=>dispatch(addToCart(product  ))}>Add to Cart</button>
+      <button onClick={()=>dispatch(addToCart(product))}>Add to Cart</button>
     </div>
   ))}
 </div>
